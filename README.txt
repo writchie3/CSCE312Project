@@ -1,1 +1,6 @@
-Bada bing bada boom its mr. worldwide when I step in the room
+Group Members:
+Amsal Kassam
+Tony Qing
+Walter Ritchie
+
+CSCE 312 Project
