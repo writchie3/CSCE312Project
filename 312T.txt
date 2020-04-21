@@ -5,8 +5,8 @@
 0x08        irmov $0x44, %rC
 0x0b        irmov $0x48, %rD
 0x0e    Adder:
-0x0f        ld (%rB), %rE
-0x12        ld (%rC), %rF
+0x0f        ld  %rE,(%rB)
+0x12        ld  %rF, (%rC)
 0x15        add %rE, %rF
 0x17        st %rE, (%rD)
 0x1a        add %rE, %rB

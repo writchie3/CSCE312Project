@@ -68,13 +68,13 @@ for x in f:
                 string3 = string3.replace('1','f')
         else:
             toWrite = "0"
-        zeroes = 4 - len(string3)
+        zeroes = 6 - len(string3)
         for i in range (1,zeroes):
             g.write(toWrite)
             if i % 2 != 0:
                 g.write(" ")
         g.write(string3)
     if':' not in x:
-        g.write(" ")
+        g.write(' ')
 f.close()
 g.close()
