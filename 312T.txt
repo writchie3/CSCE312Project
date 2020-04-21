@@ -1,0 +1,18 @@
+0x00    Main:
+0x00        irmov $0x4, %rA
+0x03        rrmov %rA, %rE
+0x05        irmov $0x40, %rB
+0x08        irmov $0x44, %rC
+0x0b        irmov $0x48, %rD
+0x0e    Adder:
+0x0f        ld (%rB), %rE
+0x12        ld (%rC), %rF
+0x15        add %rE, %rF
+0x17        st %rE, (%rD)
+0x1a        add %rE, %rB
+0x1d        add %rE, %rC
+0x20        add %rE, %rD
+0x23        irmov $0x-1, %rE
+0x26        add %rE, %rA
+0x29        jne Adder
+
