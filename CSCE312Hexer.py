@@ -14,10 +14,12 @@ for x in f:
         g.write("f3 ")
     if "st" in x:
         g.write("e1 ")
+    if "mul" in x:
+        g.write("82 ")
     if "jne" in x:
         g.write("75 ")
         s = open("312T.txt", "r")
-        check = x.find("jne")
+        check = x.find("j")
         string1 = x[check+4:-1]
         string1 = string1 +':'
         print(string1)
